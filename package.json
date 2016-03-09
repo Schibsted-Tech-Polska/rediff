@@ -1,0 +1,27 @@
+{
+  "name": "rediff",
+  "version": "0.0.1",
+  "description": "Perceptual difference testing tool",
+  "author": "Lukasz Blacha <lukasz.blacha@schibsted.pl>",
+  "license": "MIT",
+  "bin": {
+    "rediff": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.schibsted.io/lukasz-blacha/rediff"
+  },
+  "scripts": {
+    "clean": "rm -rf ./results/*",
+    "pretest": "npm run clean",
+    "test": "node --harmony index.js --config ./examples/config.js --spec all",
+    "predebug": "npm run clean",
+    "debug": "DEBUG=horseman node --harmony index.js --config ./examples/config.js --spec all"
+  },
+  "dependencies": {
+    "node-horseman": "^2.8.2",
+    "phantomjs": "^2.1.3",
+    "yargs": "^4.2.0",
+    "png-differ": "git://github.com/noodny/png-diff.git"
+  }
+}
