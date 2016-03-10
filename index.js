@@ -23,6 +23,7 @@ if (!argv.spec || argv.spec === 'all') {
 }
 
 rmdir.sync(config.resultsDir);
+fs.mkdirSync(config.resultsDir);
 
 var rediff = new Rediff(config, specs);
 rediff.run();
