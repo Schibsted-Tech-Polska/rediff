@@ -12,11 +12,13 @@
     "url": "https://github.schibsted.io/lukasz-blacha/rediff"
   },
   "scripts": {
-    "test": "node --harmony index.js --config ./examples/config.js --spec all",
+    "test": "node index.js --config ./examples/config.js --spec all",
     "test:debug": "DEBUG=horseman npm test"
   },
   "dependencies": {
+    "array-findindex": "^0.1.0",
     "node-horseman": "^2.8.2",
+    "object.assign": "^4.0.3",
     "phantomjs-prebuilt": "^2.1.5",
     "png-differ": "git://github.com/noodny/png-diff.git",
     "rmdir-recursive": "0.0.1",
