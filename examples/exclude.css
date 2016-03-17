@@ -1,0 +1,4 @@
+.random-data-that-breaks-tests,
+iframe {
+    display: none !important;
+}
