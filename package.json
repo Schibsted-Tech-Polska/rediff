@@ -16,7 +16,6 @@
     "test:debug": "DEBUG=horseman npm test"
   },
   "dependencies": {
-    "array-findindex": "^0.1.0",
     "bluebird": "^3.3.4",
     "lodash": "^4.6.1",
     "node-horseman": "^2.8.2",
