@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var rmdir = require('rmdir-recursive');
 
-var Rediff = require('./lib/rediff');
+var rediff = require('./lib/rediff');
 var config = require(path.join(process.cwd(), argv.config || 'config.js'));
 
 if(Object.keys(config.environments).length !== 2) {
@@ -25,5 +25,4 @@ if (!argv.spec || argv.spec === 'all') {
 rmdir.sync(config.resultsDir);
 fs.mkdirSync(config.resultsDir);
 
-var rediff = new Rediff(config, specs);
-rediff.run();
+rediff(config, specs);
