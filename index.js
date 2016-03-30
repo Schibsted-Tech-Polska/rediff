@@ -8,7 +8,7 @@ var rediff = require('./lib/rediff');
 var config = require(path.join(process.cwd(), argv.config || 'config.js'));
 
 if(Object.keys(config.environments).length !== 2) {
-    console.log('ERROR: Rediff expected exactly 2 environments to compare');
+    console.error('ERROR: Rediff expected exactly 2 environments to compare');
     process.exit(1);
 }
 
