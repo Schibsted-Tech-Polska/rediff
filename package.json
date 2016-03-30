@@ -1,7 +1,7 @@
 {
   "name": "rediff",
   "version": "0.0.1",
-  "description": "Perceptual difference testing tool",
+  "description": "Perceptual difference testing tool based on Pediff",
   "author": "Lukasz Blacha <lukasz.blacha@schibsted.pl>",
   "license": "MIT",
   "bin": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.schibsted.io/lukasz-blacha/rediff"
+    "url": "https://github.com/Schibsted-Tech-Polska/rediff.git"
   },
   "scripts": {
     "test": "node index.js --config ./examples/config.js --spec all",
