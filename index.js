@@ -1,4 +1,3 @@
-Object.assign = require('object.assign').getPolyfill();
 var argv = require('yargs').argv;
 var fs = require('fs');
 var path = require('path');
