@@ -1,5 +1,6 @@
 module.exports = {
     project: 'google',
+    timeout: 3000,
     specsDir: __dirname + '/specs/',
     resultsDir: __dirname + '/../results/',
     environments: {
