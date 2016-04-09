@@ -18,7 +18,7 @@
   "dependencies": {
     "bluebird": "^3.3.4",
     "lodash": "^4.6.1",
-    "node-horseman": "^3.0.0-beta1",
+    "node-horseman": "^3.0.0",
     "phantomjs-prebuilt": "^2.1.5",
     "png-differ": "git://github.com/noodny/png-diff.git",
     "png-jpg": "0.0.2",
