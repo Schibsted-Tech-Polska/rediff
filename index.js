@@ -6,6 +6,11 @@ var rmdir = require('rmdir-recursive');
 var rediff = require('./lib/rediff');
 var config = require(path.join(process.cwd(), argv.config || 'config.js'));
 
+if (!config.nojsSucksBaseUrl) {
+    console.error('ERROR: Rediff requires a working instance of https://github.com/Schibsted-Tech-Polska/nojs.sucks');
+    process.exit(1);
+}
+
 if(Object.keys(config.environments).length !== 2) {
     console.error('ERROR: Rediff expected exactly 2 environments to compare');
     process.exit(1);
