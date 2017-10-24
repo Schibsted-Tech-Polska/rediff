@@ -1,6 +1,6 @@
 {
   "name": "rediff",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Perceptual difference testing tool based on Pediff",
   "author": "Lukasz Blacha <lukasz.blacha@schibsted.pl>",
   "contributors": [
