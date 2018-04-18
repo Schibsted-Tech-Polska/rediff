@@ -29,11 +29,11 @@ module.exports = {
     cssFile: __dirname + '/exclude.css'
     environments: {
         current: {
-            baseUrl: 'https://www.godt.no/'
+            baseUrl: 'https://www.google.com/',
         },
         candidate: {
-            baseUrl: 'http://godt-testprod.vgnett.no/'
-        }
+            baseUrl: 'https://www.google.com/', // in most cases candidate baseUrl should be different than current baseUrl
+        },
     },
     nojsSucksBaseUrl: 'http://localhost:3000',
     project: 'project name',
@@ -72,8 +72,9 @@ Each spec represents one tests. The test will be performed for all declared envi
 ### Sample spec file
 
 ```javascript
+// specs/404.js
 module.exports = {
-    path: '#!/om-oss',
+    path: '#!/some-path',
     run: async page => {
         await page.waitFor(4000);
     }
@@ -117,3 +118,10 @@ img {
     transition: unset !important;
 }
 ```
+
+[Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array "Array"
+[boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type "Boolean"
+[function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function "Function"
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type "Number"
+[Object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object "Object"
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type "String"
